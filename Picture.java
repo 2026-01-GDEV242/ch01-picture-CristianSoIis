@@ -39,7 +39,7 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
+            /*wall.moveHorizontal(-140);
             wall.moveVertical(20);
             wall.changeSize(120);
             wall.makeVisible();
@@ -54,12 +54,20 @@ public class Picture
             roof.moveHorizontal(20);
             roof.moveVertical(-60);
             roof.makeVisible();
+            */
     
             body.changeColor("magenta");
-            body.moveHorizontal(100);
-            body.moveVertical(-40);
-            body.changeSize(80);
+            body.moveHorizontal(-50);
+            body.moveVertical(50);
+            body.changeSize(100);
             body.makeVisible();
+            
+            leftEar.changeColor("green");
+            leftEar.moveVertical(50);
+            leftEar.makeVisible();
+            
+            rightEar.changeColor("green");
+            rightEar.makeVisible();
             
             drawn = true;
         }
