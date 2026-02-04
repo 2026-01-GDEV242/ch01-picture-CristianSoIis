@@ -14,8 +14,9 @@ public class Picture
     private Square wall;
     private Square window;
     private Triangle roof;
-    private Circle leftEar;
-    private Circle rightEar;
+    
+    private Square leftLeaf;
+    private Square rightLeaf;
     private Circle body;
     private boolean drawn;
 
@@ -28,8 +29,8 @@ public class Picture
         window = new Square();
         roof = new Triangle();  
         body = new Circle();
-        leftEar = new Circle();
-        rightEar = new Circle();
+        leftLeaf = new Square();
+        rightLeaf = new Square();
         drawn = false;
     }
 
@@ -39,35 +40,18 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            /*wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
-    
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
-            */
-    
-            body.changeColor("magenta");
+            leftLeaf.changeColor("green");
+            leftLeaf.makeVisible();
+
+            rightLeaf.changeColor("green");
+            rightLeaf.makeVisible();
+            
+            body.changeColor("green");
             body.moveHorizontal(-50);
             body.moveVertical(50);
-            body.changeSize(100);
+            body.changeSize(75);
             body.makeVisible();
-            
-            leftEar.changeColor("green");
-            leftEar.moveVertical(50);
-            leftEar.makeVisible();
-            
-            rightEar.changeColor("green");
-            rightEar.makeVisible();
             
             drawn = true;
         }
