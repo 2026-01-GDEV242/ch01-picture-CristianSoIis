@@ -15,9 +15,17 @@ public class Picture
     private Square window;
     private Triangle roof;
     
-    private Square leftLeaf;
-    private Square rightLeaf;
-    private Circle body;
+    private Square wave1;
+    private Square wave2;
+    private Square wave3;
+    
+    private Circle sun;
+    
+    private Square sky1;
+    private Square sky2;
+    private Square sky3;
+    
+    
     private boolean drawn;
 
     /**
@@ -28,9 +36,18 @@ public class Picture
         wall = new Square();
         window = new Square();
         roof = new Triangle();  
-        body = new Circle();
-        leftLeaf = new Square();
-        rightLeaf = new Square();
+        
+        
+        wave1 = new Square();
+        wave2 = new Square();
+        wave3 = new Square();
+        
+        sky1 = new Square();
+        sky2 = new Square();
+        sky3 = new Square();
+        
+        
+        sun = new Circle();
         drawn = false;
     }
 
@@ -41,17 +58,47 @@ public class Picture
     {
         if(!drawn) {
             
-            leftLeaf.changeColor("green");
-            leftLeaf.makeVisible();
-
-            rightLeaf.changeColor("green");
-            rightLeaf.makeVisible();
+            sky1.changeColor("blue");
+            sky1.moveVertical(-500);
+            sky1.moveHorizontal(-350);
+            sky1.changeSize(550);
+            sky1.makeVisible();
             
-            body.changeColor("green");
-            body.moveHorizontal(-50);
-            body.moveVertical(50);
-            body.changeSize(75);
-            body.makeVisible();
+            sky2.changeColor("green");
+            sky2.moveVertical(-550);
+            sky2.moveHorizontal(-350);
+            sky2.changeSize(550);
+            sky2.makeVisible();
+            
+            sky3.changeColor("red");
+            sky3.moveVertical(-600);
+            sky3.moveHorizontal(-350);
+            sky3.changeSize(550);
+            sky3.makeVisible();
+            
+            sun.changeColor("yellow");
+            sun.moveVertical(5);
+            sun.moveHorizontal(-50);
+            sun.changeSize(125);
+            sun.makeVisible();
+             
+            wave1.changeColor("black"); // Change color
+            wave1.moveVertical(50);
+            wave1.moveHorizontal(-350);
+            wave1.changeSize(550);
+            wave1.makeVisible();
+            
+            wave2.changeColor("red"); // Change color
+            wave2.moveVertical(90);
+            wave2.moveHorizontal(-350);
+            wave2.changeSize(550);
+            wave2.makeVisible();
+            
+            wave3.changeColor("blue"); // Change color
+            wave3.moveVertical(130);
+            wave3.moveHorizontal(-350);
+            wave3.changeSize(550);
+            wave3.makeVisible();
             
             drawn = true;
         }
@@ -65,7 +112,6 @@ public class Picture
         wall.changeColor("black");
         window.changeColor("white");
         roof.changeColor("black");
-        body.changeColor("black");
     }
 
     /**
@@ -76,6 +122,5 @@ public class Picture
         wall.changeColor("red");
         window.changeColor("black");
         roof.changeColor("green");
-        body.changeColor("magenta");
     }
 }
