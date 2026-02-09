@@ -26,6 +26,7 @@ public class Picture
     private Square sky2;
     private Square sky3;
     
+    private Circle sand;
     
     private boolean drawn;
 
@@ -47,9 +48,10 @@ public class Picture
         sky2 = new Square();
         sky3 = new Square();
         
-        
         sun1 = new Circle();
         sun2 = new Circle();
+        
+        sand = new Circle();
         drawn = false;
     }
 
@@ -110,6 +112,12 @@ public class Picture
             wave3.moveHorizontal(-350);
             wave3.changeSize(550);
             wave3.makeVisible();
+            
+            sand.changeColor("yellow");
+            sand.moveVertical(135);
+            sand.moveHorizontal(-265);
+            sand.changeSize(125);
+            sand.makeVisible();
             
             drawn = true;
         }
