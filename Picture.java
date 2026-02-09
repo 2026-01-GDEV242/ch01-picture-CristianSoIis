@@ -131,6 +131,16 @@ public class Picture
         wall.changeColor("black");
         window.changeColor("white");
         roof.changeColor("black");
+        
+        sky1.changeColor("black");
+        sky2.changeColor("white");
+        sky3.changeColor("black");
+        sun1.changeColor("white");
+        sun2.changeColor("black");
+        wave1.changeColor("white");
+        wave2.changeColor("black");
+        wave3.changeColor("white");
+        sand.changeColor("black");
     }
 
     /**
@@ -141,5 +151,15 @@ public class Picture
         wall.changeColor("red");
         window.changeColor("black");
         roof.changeColor("green");
+        
+        sky1.changeColor("");
+        sky2.changeColor("");
+        sky3.changeColor("");
+        sun1.changeColor("");
+        sun2.changeColor("");
+        wave1.changeColor("");
+        wave2.changeColor("");
+        wave3.changeColor("");
+        sand.changeColor("");
     }
 }
