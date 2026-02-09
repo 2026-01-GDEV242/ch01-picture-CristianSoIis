@@ -19,7 +19,8 @@ public class Picture
     private Square wave2;
     private Square wave3;
     
-    private Circle sun;
+    private Circle sun1;
+    private Circle sun2;
     
     private Square sky1;
     private Square sky2;
@@ -47,7 +48,8 @@ public class Picture
         sky3 = new Square();
         
         
-        sun = new Circle();
+        sun1 = new Circle();
+        sun2 = new Circle();
         drawn = false;
     }
 
@@ -76,11 +78,20 @@ public class Picture
             sky3.changeSize(550);
             sky3.makeVisible();
             
-            sun.changeColor("yellow");
-            sun.moveVertical(5);
-            sun.moveHorizontal(-50);
-            sun.changeSize(125);
-            sun.makeVisible();
+            
+            sun1.changeColor("red");
+            sun1.moveVertical(-15);
+            sun1.moveHorizontal(-75);
+            sun1.changeSize(175);
+            sun1.makeVisible();
+            
+            sun2.changeColor("yellow");
+            sun2.moveVertical(5);
+            sun2.moveHorizontal(-50);
+            sun2.changeSize(125);
+            sun2.makeVisible();
+            
+            
              
             wave1.changeColor("black"); // Change color
             wave1.moveVertical(50);
