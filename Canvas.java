@@ -170,8 +170,12 @@ public class Canvas
         else if(colorString.equals("cornsilk")) {
             graphic.setColor(new Color(255,248,220));
         }
-        
-        
+        else if(colorString.equals("cobalt")) {
+            graphic.setColor(new Color(0,71,171));
+        }
+        else if(colorString.equals("gray")) {
+            graphic.setColor(new Color(128,128,128));
+        }
         else {
             graphic.setColor(Color.black);
         }
