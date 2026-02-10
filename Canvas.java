@@ -143,8 +143,23 @@ public class Canvas
         else if(colorString.equals("white")) {
             graphic.setColor(Color.white);
         }
-        else if(colorString.equals("bubbles")) {
-            graphic.setColor(new Color(231,254,255));
+        else if(colorString.equals("topaz")) {
+            graphic.setColor(new Color(255,200,124));
+        }
+        else if(colorString.equals("pastelorange")) {
+            graphic.setColor(new Color(255,179,71));
+        }
+        else if(colorString.equals("orangered")) {
+            graphic.setColor(new Color(255,69,0));
+        }
+        else if(colorString.equals("sunset")) {
+            graphic.setColor(new Color(253,94,83));
+        }
+        else if(colorString.equals("yellowrose")) {
+            graphic.setColor(new Color(255,240,0));
+        }//
+        else if(colorString.equals("lightcyan")) {
+            graphic.setColor(new Color(224,255,255));
         }
         else if(colorString.equals("blizzard")) {
             graphic.setColor(new Color(172,229,238));
@@ -155,9 +170,8 @@ public class Canvas
         else if(colorString.equals("cornsilk")) {
             graphic.setColor(new Color(255,248,220));
         }
-        else if(colorString.equals("sunset")) {
-            graphic.setColor(new Color(253,94,83));
-        }
+        
+        
         else {
             graphic.setColor(Color.black);
         }

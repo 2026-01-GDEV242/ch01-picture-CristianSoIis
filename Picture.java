@@ -62,58 +62,57 @@ public class Picture
     {
         if(!drawn) {
             
-            sky1.changeColor("blue");
+            sky1.changeColor("topaz");
             sky1.moveVertical(-500);
             sky1.moveHorizontal(-350);
             sky1.changeSize(550);
             sky1.makeVisible();
             
-            sky2.changeColor("green");
+            sky2.changeColor("pastelorange");
             sky2.moveVertical(-550);
             sky2.moveHorizontal(-350);
             sky2.changeSize(550);
             sky2.makeVisible();
             
-            sky3.changeColor("red");
+            sky3.changeColor("orangered");
             sky3.moveVertical(-600);
             sky3.moveHorizontal(-350);
             sky3.changeSize(550);
             sky3.makeVisible();
             
             
-            sun1.changeColor("red");
+            sun1.changeColor("sunset");
             sun1.moveVertical(-15);
             sun1.moveHorizontal(-75);
             sun1.changeSize(175);
             sun1.makeVisible();
             
-            sun2.changeColor("yellow");
+            sun2.changeColor("yellowrose");
             sun2.moveVertical(5);
             sun2.moveHorizontal(-50);
             sun2.changeSize(125);
             sun2.makeVisible();
             
-            
              
-            wave1.changeColor("black"); // Change color
+            wave1.changeColor("lightcyan");
             wave1.moveVertical(50);
             wave1.moveHorizontal(-350);
             wave1.changeSize(550);
             wave1.makeVisible();
             
-            wave2.changeColor("red"); // Change color
+            wave2.changeColor("blizzard"); // Change color
             wave2.moveVertical(90);
             wave2.moveHorizontal(-350);
             wave2.changeSize(550);
             wave2.makeVisible();
             
-            wave3.changeColor("blue"); // Change color
+            wave3.changeColor("sea"); // Change color
             wave3.moveVertical(130);
             wave3.moveHorizontal(-350);
             wave3.changeSize(550);
             wave3.makeVisible();
             
-            sand.changeColor("yellow");
+            sand.changeColor("cornsilk");
             sand.moveVertical(135);
             sand.moveHorizontal(-265);
             sand.changeSize(125);
@@ -148,18 +147,14 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        
-        sky1.changeColor("");
-        sky2.changeColor("");
-        sky3.changeColor("");
-        sun1.changeColor("");
-        sun2.changeColor("");
-        wave1.changeColor("");
-        wave2.changeColor("");
-        wave3.changeColor("");
-        sand.changeColor("");
+        sky1.changeColor("topaz");
+        sky2.changeColor("pastelorange");
+        sky3.changeColor("orangered");
+        sun1.changeColor("sunset");
+        sun2.changeColor("yellowrose");
+        wave1.changeColor("lightcyan");
+        wave2.changeColor("blizzard");
+        wave3.changeColor("sea");
+        sand.changeColor("cornsilk");
     }
 }
